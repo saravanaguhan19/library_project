@@ -239,6 +239,7 @@ button:active {
 }
 .highlight__wrapper {
   display: flex;
+  flex-wrap: wrap;
   max-width: 100vw;
 }
 
@@ -246,10 +247,11 @@ button:active {
   padding: 0 24px;
   width: calc(100% / 3);
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
+
 .highlight__para {
   text-align: center;
   max-width: 280px;
@@ -266,10 +268,14 @@ button:active {
   color: #7342d6;
   margin-bottom: 24px;
 }
+.highlight__para {
+  font-weight: bold;
+}
 
 .highlight__subtitle {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 /* 
@@ -370,6 +376,12 @@ footer {
   h2 {
     font-size: 26px;
   }
+  button {
+    font-size: 18px;
+  }
+  .book {
+    width: 50%;
+  }
 }
 /* SMALL PHONES , LARGE SMARTPHONES */
 
@@ -379,5 +391,11 @@ footer {
   }
   .btn__menu {
     display: block;
+  }
+  .highlight {
+    width: 100%;
+  }
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
